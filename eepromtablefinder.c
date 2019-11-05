@@ -65,7 +65,7 @@ void findtable(unsigned char* data, unsigned int len)
 
     testaddr += 0x10000;
     printf ("dumping table at %x\n", testaddr);
-    for (i=0; i < 65; i++)
+    for (i=0; i < 129; i++)
     {
         unsigned short value = *((unsigned short*)(data + testaddr + (i*2)));
 
